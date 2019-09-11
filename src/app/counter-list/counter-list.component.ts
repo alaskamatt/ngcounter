@@ -8,11 +8,11 @@ import Counter from '../counter';
 })
 export class CounterListComponent implements OnInit {
 
-  counters: Counter[];
+  countersList: Counter[];
   name = 'Counter Wall';
 
   constructor() { 
-    this.counters = [];
+    this.countersList = [];
   }
 
   ngOnInit() {
@@ -20,7 +20,7 @@ export class CounterListComponent implements OnInit {
 
   create() {
     const counter = new Counter();
-    this.counters.push(counter);
+    this.countersList.push(counter);
   }
 
 }

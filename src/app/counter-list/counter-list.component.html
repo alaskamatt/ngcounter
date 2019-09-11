@@ -1,3 +1,8 @@
-<p>
-  counter-list works!
-</p>
+<div>
+  <h2>{{ name }}</h2>
+  <button id='addCounter' (click)="create()">Add Counter</button>
+</div>
+<div>
+  
+  <app-counter-detail *ngFor="let c of countersList" [counter]="c"></app-counter-detail>
+</div>
