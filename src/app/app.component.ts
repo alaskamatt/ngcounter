@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Counter from './counter';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Counter';
+
+
 }

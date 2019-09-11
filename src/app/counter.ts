@@ -1,5 +1,5 @@
 export class Counter {
-    totValue = 0;
+    totValue: number = 0;
 }
 
 export default Counter;
