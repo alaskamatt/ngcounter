@@ -26,4 +26,16 @@ describe('CounterListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have empty counter list at start', () => {
+    expect(component.countersList.length).toBe(0);
+  })
+
+  it('should add a counter upon click()', () => {
+    component.countersList = [];
+    component.create();
+    expect(component.countersList.length).toBe(1);
+    component.create();
+    expect(component.countersList.length).toBe(2);
+  })
 });

@@ -16,6 +16,7 @@ export class CounterListComponent implements OnInit {
   }
 
   ngOnInit() {
+    //this.create();
   }
 
   create() {

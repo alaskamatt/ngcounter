@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: lime
+}
+
+.container {
+    background-color: tomato
+}
+
+#incrementMe {
+    background-color: aqua
+}
+
+#decrementMe {
+    background-color: hotpink
+}
