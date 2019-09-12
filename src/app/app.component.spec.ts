@@ -2,6 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { CounterListComponent } from './counter-list/counter-list.component';
 import { CounterDetailComponent } from './counter-detail/counter-detail.component';
+import { SuperCounterComponent } from './super-counter/super-counter.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +10,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         CounterListComponent,
-        CounterDetailComponent
+        CounterDetailComponent,
+        SuperCounterComponent
       ],
     }).compileComponents();
   }));

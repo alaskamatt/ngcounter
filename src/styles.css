@@ -14,3 +14,44 @@ body {
 #decrementMe {
     background-color: hotpink
 }
+
+#decrementMe:disabled {
+    background-color: blueviolet
+}
+
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: dodgerblue;    }
+    50%{    color: transparent; }
+    100%{   color: dodgerblue;    }
+}
+
+h2 {
+    color: chartreuse
+}
+
+h3 {
+    color: yellow
+}
+
+.ding {
+    background-color: darkgoldenrod
+}
+
+.row {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#displayTotValue {
+    color: red;
+    border: 1px solid white;
+    margin: 0px;
+}
+
+.counterBtn, .superCounterBtn {
+    width: 50%
+}

@@ -59,6 +59,4 @@ describe('CounterDetailComponent', () => {
     fixture.detectChanges();
     expect(compiled.querySelector('#decrementMe').getAttribute('disabled')).toEqual('');
   });
-
-
 });

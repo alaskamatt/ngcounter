@@ -1,10 +1,21 @@
 <div>
   <h2>{{ name }}</h2>
-  <button (click)="create()">Add Counter</button>
+  <h3>
+    <marquee behavior="scroll" direction="left"
+      >Message from Adam and Matt. Booyah!!!</marquee
+    >
+  </h3>
+  <button (click)="create()" class="ding">Add Counter</button>
 </div>
-<div>
-  <app-counter-detail
-    *ngFor="let c of countersList"
-    [counter]="c">
+<div class="row">
+  <app-super-counter 
+    *ngFor="let s of superCountersList" 
+    [superCounter]="s"
+  >
+  </app-super-counter>
+  <app-counter-detail 
+    *ngFor="let c of countersList" 
+    [counter]="c"
+  >
   </app-counter-detail>
 </div>
