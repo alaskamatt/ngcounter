@@ -7,10 +7,10 @@ import Counter from '../counter';
   styleUrls: ['./counter-list.component.css']
 })
 export class CounterListComponent implements OnInit {
+  name = 'Counter Wall';
 
   countersList: Counter[];
   superCountersList: Counter[];
-  name = 'Counter Wall';
 
   constructor() { 
     this.countersList = [];
@@ -23,10 +23,17 @@ export class CounterListComponent implements OnInit {
 
   create() {
     const counter = new Counter();
-    if(this.countersList.length <= 4) {
-      this.countersList.push(counter);
-    } else {
-      this.superCountersList.push(counter);
+    this.countersList.push(counter);
+
+    if(this.countersList.length %6 === 0) {
+      const total = this.countersList
+        .map(c => {return c.totValue})
+        .reduce((tot, val) => tot + val);
+
+      const superCounter = new Counter();
+      superCounter.totValue = total;
+
+      this.superCountersList.push(superCounter);
       this.countersList = [];
     }
   }

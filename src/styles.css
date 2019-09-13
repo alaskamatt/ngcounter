@@ -1,57 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: lime
+  background-color: lime;
 }
 
 .container {
-    background-color: tomato
+  background-color: tomato;
+  width: 75%;
 }
 
 #incrementMe {
-    background-color: aqua
+  background-color: aqua;
 }
 
 #decrementMe {
-    background-color: hotpink
+  background-color: hotpink;
 }
 
 #decrementMe:disabled {
-    background-color: blueviolet
+  background-color: blueviolet;
 }
 
-.blinking{
-    animation:blinkingText 0.8s infinite;
+.blinking {
+  animation: blinkingText 0.8s infinite;
 }
-@keyframes blinkingText{
-    0%{     color: dodgerblue;    }
-    50%{    color: transparent; }
-    100%{   color: dodgerblue;    }
+@keyframes blinkingText {
+  0% {
+    color: dodgerblue;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: dodgerblue;
+  }
 }
 
 h2 {
-    color: chartreuse
+  color: chartreuse;
 }
 
 h3 {
-    color: yellow
+  color: yellow;
 }
 
 .ding {
-    background-color: darkgoldenrod
+  background-color: darkgoldenrod;
 }
 
 .row {
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
 }
 
 #displayTotValue {
-    color: red;
-    border: 1px solid white;
-    margin: 0px;
+  color: red;
+  border: 1px solid white;
+  margin-bottom: 0px;
 }
 
-.counterBtn, .superCounterBtn {
-    width: 50%
+.counterBtn {
+  width: 50%;
+}
+
+.counter {
+  border: 1px solid;
+  width: 100px;
+  padding: 10px;
+  margin: 2px;
+}
+
+.counter-super {
+  border: 1px solid;
+  width: 200px;
+  padding: 10px;
+  margin: 2px;
 }

@@ -1,22 +1,19 @@
-<div class="col-sm">
-    <h4 id="displaySuperValue">
-      {{ superCounter.totValue }}
-    </h4>
-    <p>
-      <button
-        class="superCounterBtn"
-        id="decrementSuper"
-        (click)="decrement()"
-        [disabled]="superCounter.totValue <= 0"
-      >
-        -
-      </button>
-      <button 
-        class="superCounterBtn" 
-        id="incrementSuper" 
-        (click)="increment()"
-      >
-        +
-      </button>
-    </p>
+<div class="col-md counter-super">
+  <h4 id="displayTotValue">
+    {{ superCounter.totValue }}
+  </h4>
+  <div>
+    <button
+      class="counterBtn"
+      id="decrementMe"
+      (click)="decrement()"
+      [disabled]="superCounter.totValue <= 0"
+    >
+      -
+    </button>
+    <button class="counterBtn" id="incrementMe" (click)="increment()"
+    >
+      +
+    </button>
   </div>
+</div>

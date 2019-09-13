@@ -44,7 +44,7 @@ describe('CounterDetailComponent', () => {
     expect(component.counter.totValue).toBe(8);
   });
   
-  it('should disable when 0', () => {
+  it('should disable decrement button when total is 0', () => {
     const compiled = fixture.debugElement.nativeElement;
 
     component.counter.totValue = 0;

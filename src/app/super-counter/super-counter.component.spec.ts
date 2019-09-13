@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SuperCounterComponent } from './super-counter.component';
 
 describe('SuperCounterComponent', () => {
@@ -23,11 +22,6 @@ describe('SuperCounterComponent', () => {
     expect(component).toBeTruthy();
   });
 
-
-  // it('should start counter at 0', () => {
-  //   expect(component.superCounter.totValue).toBe(0);
-  // });
-
   it('should increment counter 3 per click', () => {
     component.superCounter.totValue = 2;
     component.increment();
@@ -36,7 +30,7 @@ describe('SuperCounterComponent', () => {
     expect(component.superCounter.totValue).toBe(8);
   });
 
-  it('should decrement counter 3 per click', () => {
+  it('should decrement counter 3 per click and not go negative', () => {
     component.superCounter.totValue = 5;
     component.decrement();
     expect(component.superCounter.totValue).toBe(2);
@@ -44,7 +38,7 @@ describe('SuperCounterComponent', () => {
     expect(component.superCounter.totValue).toBe(0);
   });
   
-  it('should disable when 0', () => {
+  it('should disable decrement button when total is 0', () => {
     const compiled = fixture.debugElement.nativeElement;
 
     component.superCounter.totValue = 0;
@@ -59,6 +53,4 @@ describe('SuperCounterComponent', () => {
     fixture.detectChanges();
     expect(compiled.querySelector('#decrementSuper').getAttribute('disabled')).toEqual('');
   });
-
-
 });
